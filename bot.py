@@ -54,7 +54,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     await update.message.reply_text("Use /start to test this bot.")
 
 
-app = ApplicationBuilder().token("5810368499:AAFsVF_ScmKP9eKPNvPW2WkiD59Xsve1Zpw").build()
+app = ApplicationBuilder().token("Token").build()
 
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(button))
@@ -71,7 +71,7 @@ app.run_polling()
 # Done! Congratulations on your new bot. You will find it at t.me/vanneste_bot. You can now add a description, about section and profile picture for your bot, see /help for a list of commands. By the way, when you've finished creating your cool bot, ping our Bot Support if you want a better username for it. Just make sure the bot is fully operational before you do this.
 
 # Use this token to access the HTTP API:
-# 5810368499:AAFsVF_ScmKP9eKPNvPW2WkiD59Xsve1Zpw
+# Token
 # Keep your token secure and store it safely, it can be used by anyone to control your bot.
 
 # For a description of the Bot API, see this page: https://core.telegram.org/bots/api
